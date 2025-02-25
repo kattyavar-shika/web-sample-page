@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        /* Fade-in keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+     <nav class="bg-teal-900 bg-opacity-70 backdrop-blur-md p-4 fade-in" style="animation-delay: 0.3s;">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+            <div class="text-white text-xl font-bold">Learning Page</div>
+            <div class="w-full lg:w-auto mt-4 lg:mt-0">
+                <ul class="flex flex-col lg:flex-row w-full space-y-2 lg:space-y-0 lg:space-x-6 text-center">
+                    <li><a href="#home" class="block text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a></li>
+                    <li><a href="#explore" class="block text-white hover:bg-teal-700 px-3 py-2 rounded">Explore More</a>
+                    </li>
+                    <li><a href="#about" class="block text-white hover:bg-teal-700 px-3 py-2 rounded">About</a></li>
+                    <li><a href="#contact" class="block text-white hover:bg-teal-700 px-3 py-2 rounded">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-gradient-to-r from-sky-900 to-sky-500 text-white  flex flex-col lg:flex-row lg:justify-between">
+        <div class="lg:w-2/3">
+            
+				<iframe class="w-full h-full"  
+				frameborder="0" allow="accelerometer;  clipboard-write; 
+				encrypted-media; gyroscope; " 
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+        </div>
+        <div class="lg:w-1/3">
+            <div class=" flex flex-col ">
+                <div class="text-base" id="pricing">
+                    <div
+                        class="isolate mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8 lg:max-w-screen-lg">
+                        <div
+                            class="bgBackGroundClr bg-gradient-to-r from-sky-900 to-sky-600  p-3 xl:p-5 flex flex-col justify-between">
+                            <div class="border-b border-gray-200">
+                                <nav class="flex space-x-4 bg-white-950" aria-label="Tabs">
+                                    <button
+                                        class="py-2 px-4 flex items-center space-x-2 text-white-600 border-b-2 border-white-600"
+                                        onclick="openTab(event, 'syllabus')">
+                                        <i class="fas fa-book"></i><span>Course Content</span>
+                                    </button>
+                                </nav>
+                            </div>
+                            <div id="syllabus" class="tab-content no-scrollbar-buttons overflow-y-auto h-[31.2rem]
+							">
+                                <div class="space-y-2">
+                                    <div class="border-b-2 border-gray-200 rounded-md">
+                                        <button class="w-full text-left p-3  flex justify-between items-center"
+                                            onclick="toggleCollapse('topic1')">
+                                            <span class="text-white font-bold">Topic 1</span> <i
+                                                class="fas fa-chevron-down bg-gray-500 p-2 inline-block"></i>
+                                        </button>
+                                        <div id="topic1" class="p-4 bg-white bg-opacity-75 hidden text-black">Details
+                                             <ul role="list"
+                                            class="mt-8 space-y-3 text-sm leading-6 text-white-600 xl:mt-10">
+                                            <li class="flex gap-x-3 text-base">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                                    class="h-6 w-5 flex-none text-white-600">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                    </path>
+                                                </svg>
+                                                Lifetime access
+                                            </li>
+                                            <li class="flex gap-x-3 text-base">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                                    class="h-6 w-5 flex-none text-white-600">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                    </path>
+                                                </svg>
+                                                All AI features
+                                            </li>
+                                            <li class="flex gap-x-3 text-base">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                                    class="h-6 w-5 flex-none text-white-600">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                    </path>
+                                                </svg>
+                                                All AI features
+                                            </li>
+
+                                        </ul>
+                                        </div>
+                                    </div>
+                                    <div class="border-b-2 border-b-gray-200 rounded-md">
+                                        <button class="w-full text-left p-3  flex justify-between items-center"
+                                            onclick="toggleCollapse('topic3')">
+                                            <span class="text-white font-bold">Topic 1</span> <i
+                                                class="fas fa-chevron-down bg-gray-500 p-2 inline-block"></i>
+                                        </button>
+                                        <div id="topic3" class="p-4  bg-white bg-opacity-75 hidden text-black">Details
+                                            about Topic 1.
+                                        </div>
+                                    </div>
+                                    <div class="border-b-2 border-gray-200 rounded-md">
+                                        <button class="w-full text-left p-3  flex justify-between items-center"
+                                            onclick="toggleCollapse('topic4')">
+                                            <span class="text-white font-bold">Topic 1</span> <i
+                                                class="fas fa-chevron-down bg-gray-500 p-2 inline-block"></i>
+                                        </button>
+                                        <div id="topic4" class="p-4  bg-white bg-opacity-75 hidden text-black">Details
+                                            about Topic 1.
+                                        </div>
+                                    </div>
+                                    <div class="border-b-2 border-gray-200 rounded-md">
+                                        <button class="w-full text-left p-3  flex justify-between items-center"
+                                            onclick="toggleCollapse('topic2')">
+                                            <span class="text-white font-bold">Topic 2</span> <i
+                                                class="fas fa-chevron-down bg-gray-500 p-2 inline-block"></i>
+                                        </button>
+                                        <div id="topic2" class="p-4 bg-white bg-opacity-75 hidden text-black">Details
+                                            about Topic 2.
+                                        </div>
+                                    </div>
+                                    <div class="border-b-2 border-gray-200 rounded-md">
+                                        <button class="w-full text-left p-3  flex justify-between items-center"
+                                            onclick="toggleCollapse('topic5')">
+                                            <span class="text-white font-bold">Topic 2</span> <i
+                                                class="fas fa-chevron-down bg-gray-500 p-2 inline-block"></i>
+                                        </button>
+                                        <div id="topic5" class="p-4  bg-white bg-opacity-75 hidden text-black">Details
+                                            about Topic 2.
+                                        </div>
+                                    </div>
+                                    <div class="border-b-2 border-gray-200 rounded-md">
+                                        <button class="w-full text-left p-3  flex justify-between items-center"
+                                            onclick="toggleCollapse('topic6')">
+                                            <span class="text-white font-bold">Topic 2</span> <i
+                                                class="fas fa-chevron-down bg-gray-500 p-2 inline-block"></i>
+                                        </button>
+                                        <div id="topic6" class="p-4  bg-white bg-opacity-75 hidden text-black">Details
+                                            about Topic 2.
+                                        </div>
+                                    </div>
+                                    <div class="border-b-2 border-gray-200 rounded-md">
+                                        <button class="w-full text-left p-3  flex justify-between items-center"
+                                            onclick="toggleCollapse('topic7')">
+                                            <span class="text-white font-bold">Topic 2</span> <i
+                                                class="fas fa-chevron-down bg-gray-500 p-2 inline-block"></i>
+                                        </button>
+                                        <div id="topic7" class="p-4 hidden bg-white bg-opacity-75 ">Details about Topic
+                                            2.
+                                        </div>
+                                    </div>
+                                    <div class="border-b-2 border-gray-200 rounded-md">
+                                        <button class="w-full text-left p-3  flex justify-between items-center"
+                                            onclick="toggleCollapse('topic8')">
+                                            <span class="text-white font-bold">Topic 2</span> <i
+                                                class="fas fa-chevron-down bg-gray-500 p-2 inline-block"></i>
+                                        </button>
+                                        <div id="topic8" class="p-4 hidden bg-white bg-opacity-75">Details about Topic
+                                            2.
+                                        </div>
+                                    </div>
+                                    <div class="border-b-2 border-gray-200 rounded-md">
+                                        <button class="w-full text-left p-3  flex justify-between items-center"
+                                            onclick="toggleCollapse('topic9')">
+                                            <span class="text-white font-bold">Topic 2</span> <i
+                                                class="fas fa-chevron-down bg-gray-500 p-2 inline-block"></i>
+                                        </button>
+                                        <div id="topic9" class="p-4 hidden bg-white bg-opacity-75">Details about Topic
+                                            2.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="details" class="tab-content mt-4 hidden">
+                            <p>Course details will be displayed here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-white  flex flex-col lg:flex-row lg:justify-between">
+        <div class="lg:w-3/4 ">
+            
+        </div>
+    </div>
+    <footer class="bg-teal-900 text-white text-center py-4 mt-10 fade-in">
+        &copy; 2025 My Learning Page. All rights reserved.
+    </footer>
+</body>
+<script>
+    function openTab(event, tabName) {
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+        document.getElementById(tabName).classList.remove('hidden');
+
+        document.querySelectorAll('nav button').forEach(btn => {
+            btn.classList.remove('text-blue-600', 'border-blue-600', 'border-b-2'); // Remove active styles
+            btn.classList.add('text-gray-600'); // Default style
+        });
+
+        event.currentTarget.classList.add('text-blue-600', 'border-blue-600', 'border-b-2'); // Apply active styles
+        event.currentTarget.classList.remove('text-gray-600'); // Ensure inactive styles are removed
+    }
+    function toggleCollapse(id) {
+        document.getElementById(id).classList.toggle('hidden');
+    }
+</script>
+
+</html>

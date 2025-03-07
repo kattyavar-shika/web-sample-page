@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Topics Tree</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" ></script>
+    <style>
+	 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+	 
+	 .font-family-karla {
+            font-family: karla;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+        .bgBackGroundClr {
+           background: linear-gradient(120deg, #B0E0E6 0%, #87CEFA 25%, #4682B4 50%, #4169E1 75%, #4682B4 100%);
+        }        
+    </style>
+</head>
+
+<body class="bg-white font-family-karla">
+    <!-- Top Bar Nav -->
+    <nav class="w-full py-2 bg-blue-800 shadow">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
+
+            <nav>
+                <ul class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="#"></a></li>
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="#"></a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center text-lg no-underline text-white pr-6">
+                <a class="" href="#">
+                    
+                </a>
+                <a class="pl-6" href="#">
+                    
+                </a>
+                <a class="pl-6" href="#">
+                    <i class="fab fa-sign in"></i>
+                </a>
+                <span class="pl-6" href="#">
+                   <a class="hover:text-gray-200 hover:underline px-4" href="#">Login</a>
+                </span>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Topic Nav -->
+    <nav class="w-full py-2 border-t border-b bg-gray-100" ">
+        <div  class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+                <a href="#home" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Home</a>
+                <a href="#explore" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Explore More</a>
+                <a href="#mock" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Mock Up</a>
+                <a href="#about" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">About</a>
+                <a href="#contact" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Contact</a>
+                
+            </div>
+        </div>
+    </nav>
+	
+	
+    <main>
+        <div class="absolute h-[48.5rem] bg-blue-50 w-full top-0 -z-10">
+        </div>
+        <div class="pt-20 px-4 lg:px-16">
+            <div
+                class="bg-white text-white border border-2 border-solid border-gray-500 p-8 flex flex-col lg:flex-row rounded-2xl items-center lg:justify-between">
+                <div class="lg:w-2/3 space-y-6">
+                    <h2 class="text-sm uppercase font-semibold tracking-widest"></h2>
+                    <h1 class="text-4xl lg:text-5xl font-bold leading-tight">
+                        <span class="text-blue-900">Java Technology</span>
+                    </h1>
+                    <p class="text-1xl font-semibold text-gray-600 pb-4">
+                        Flutter is a great framework for mobile/web/desktop cross-platform development.
+                        This course will focus on mobile apps and will teach you how to integrate your
+                        app with phone calls, messaging,
+                        and audio/video, and how to exploit geolocation features.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-gray-700">✓</span>
+                            <span class="text-gray-700">Access top-tier experts to strengthen your team</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-gray-700">✓</span>
+                            <span class="text-gray-700">Seamlessly manage projects and optimize workflows</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-gray-700">✓</span>
+                            <span class="text-gray-700">Benefit from continuous support and end-to-end solutions</span>
+                        </li>
+                    </ul>
+                    <button class="bg-white text-sky-900 font-bold py-2 px-4 rounded hover:bg-gray-200 transition">
+                        <h3 class="text-sm font-semibold text-blue-700">Next Cohort Starts</h3>
+                        <p class="text-sm font-bold text-blue-600">3<sup>rd</sup> Feb, 2025</p>
+                    </button>
+                    <button class="bg-white text-sky-900 font-bold py-2 px-4 rounded hover:bg-gray-200 transition">
+                        <h3 class="text-sm font-semibold text-blue-800">Program Duration</h3>
+                        <p class="text-sm font-bold text-blue-600">11 Months</p>
+                    </button>
+                    <button class="bg-white text-sky-900 font-bold py-2 px-4 rounded hover:bg-gray-200 transition">
+                        <h3 class="text-sm font-semibold text-blue-800">Learning Format</h3>
+                        <p class="text-sm font-bold text-blue-600">Live, Online, Interactive</p>
+                    </button>
+                    <div class=" flex  flex-col "></div>
+                    <div class=" flex  flex-col ">
+                        <div class="flex flex-row">
+                            <div class="basis-64 p-2"><a href="" aria-describedby="tier-extended"
+                                    class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700
+									flex items-center justify-center px-2 py-3 mt-6 "
+                                    target="_blank">Get Started</a></div>
+                            <div class="basis-64 p-2"><a href="" aria-describedby="tier-extended"
+                                    class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700
+									flex items-center justify-center px-2 py-3 mt-6 "
+                                    target="_blank">Previous Course</a></div>
+                        </div>
+                    </div>
+                    <div class=" flex  flex-col "></div>
+                    <div class=" flex  flex-col "></div>
+                    <div class=" flex  flex-col "></div>
+                    <div class=" flex  flex-col "></div>
+                    <h1 class="text-2xl text-blue-900 lg:text-2xl font-bold leading-tight">
+                        What you'll learn
+                    </h1>
+                    <p class="text-md text-gray-700">
+                        Flutter enables cross-platform development targeting mobile, web,
+                        and desktop platforms, but in order to make the most of the capabilities of mobile devices,
+                        packages
+                        beyond the core ones may be needed. In this course, Developing Mobile-specific Features with
+                        Flutter,
+                        you’ll learn to use a number of Flutter plugins aimed mainly at Android and iOS. First, you’ll
+                        explore
+                        how to add audio and videos to your apps, and how to display web pages directly within them.
+                        Next,
+                        you’ll discover the use of the URL launcher to place calls, send messages, and open the browser
+                        from
+                        your apps. Finally, you’ll learn how to use the geolocation capabilities of your mobile device.
+                        When
+                        you’re finished with this course, you’ll have the skills and knowledge of mobile development
+                        needed to
+                        create apps that can target both Android and iOS from a single code base.
+                    </p>
+                </div>
+                <div class="lg:w-1/3 mt-8 lg:mt-0 flex justify-center">
+                    <div>
+                        <div class=" flex  flex-col ">
+                            <div class=" sm:px-10 flex flex-col justify-center items-center text-base 
+						                h-auto mx-auto longColumns mt-20 sm:mt-24" id="pricing">
+                                <div
+                                    class="isolate mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8 lg:max-w-screen-lg">
+                                    <div
+                                        class="bgBackGroundClr bg-gradient-to-r from-sky-900 to-sky-600 rounded-3xl p-8 xl:p-10 flex flex-col justify-between">
+                                        <div class="flex items-center justify-between gap-x-4">
+                                            <h3 id="tier-extended"
+                                                class="  text-white-600 text-2xl font-semibold leading-8">
+                                                Try this course for free</h3>
+                                        </div>
+                                        <p class="mt-4 text-base leading-6 text-white-600">Access this course and other
+                                            top-rated tech content with a free trial.</p>
+                                        <a href="" aria-describedby="tier-extended"
+                                            class="w-full bg-blue-800 text-white  text-sm uppercase rounded 
+											rounded-full py-2 px-3 text-center text-base  leading-6 hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6"
+                                            target="_blank">Free individual trial</a>
+
+                                        <a href="" aria-describedby="tier-extended" class="w-full bg-blue-800 text-white  text-sm uppercase rounded 
+											rounded-full py-2 px-3 text-center text-base  leading-6 hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6"
+                                            target="_blank">Free trial</a>
+
+                                        <ul role="list"
+                                            class="mt-8 space-y-3 text-sm leading-6 text-white-600 xl:mt-10">
+                                            <li class="flex gap-x-3 text-base">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                                    class="h-6 w-5 flex-none text-white-600">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                    </path>
+                                                </svg>
+                                                Lifetime access
+                                            </li>
+                                            <li class="flex gap-x-3 text-base">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                                    class="h-6 w-5 flex-none text-white-600">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                    </path>
+                                                </svg>
+                                                All AI features
+                                            </li>
+                                            <li class="flex gap-x-3 text-base">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                                    class="h-6 w-5 flex-none text-white-600">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                    </path>
+                                                </svg>
+                                                All AI features
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex  flex-col px-10 pt-10">
+                            <div class="w-full text-left">
+                                <h2 class="text-2xl font-bold mb-4 text-blue-900">Course Info</h2>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-center border-b pb-2">
+                                        <span class="text-gray-600">Rating</span>
+                                        <div class="flex items-center space-x-1">
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <i class="fa fa-star-half-o text-yellow-400"></i>
+                                            <span class="text-gray-500 ml-2">(12 reviews)</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center border-b pb-2">
+                                        <span class="text-gray-600">Level</span>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="text-gray-600 font-medium">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center border-b pb-2">
+                                        <span class="text-gray-600">Last Updated</span>
+                                        <div class="flex items-center space-x-2 text-gray-500">
+                                            <span>Jul 13, 2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-600">Duration</span>
+                                        <div class="flex items-center space-x-2 text-gray-500">
+                                            <span>1h 36m 32s</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-14 px-4 lg:px-10">
+            <div class="text-white p-8 flex flex-col lg:flex-row rounded-2xl items-center lg:justify-between">
+                <div class="lg:w-2/3 space-y-6">
+                    <div class="w-full rounded-xl col-span-1 md:col-span-2 xl:col-span-2">
+                        <div class="max-w-6xl mx-auto  ">
+                            <ul class="shadow-md border border-gray-300 rounded-lg bg-white">
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-6 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic3')">
+
+                                        <div class="flex items-center">
+                                            <!-- Icons -->
+                                            <svg id="icon-down-topic3"
+                                                class="w-5 h-5 text-gray-500 transition-transform duration-300"
+                                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7">
+                                                </path>
+                                            </svg>
+                                            <svg id="icon-up-topic3"
+                                                class="w-5 h-5 text-gray-500 transition-transform duration-300 hidden"
+                                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7">
+                                                </path>
+                                            </svg>
+                                            <span class="ml-6 text-black text-md font-medium">Is there a refund
+                                                policy?</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right w-24 text-center">1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic3"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-red-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Introduction to
+                                                            Refund Policy</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-red-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Refund Process
+                                                            Explained</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-red-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Common Refund
+                                                            Questions</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-6 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic1')">
+
+                                        <div class="flex items-center">
+                                            <!-- Icons -->
+                                            <svg id="icon-down-topic1"
+                                                class="w-5 h-5 text-gray-500 transition-transform duration-300"
+                                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7">
+                                                </path>
+                                            </svg>
+                                            <svg id="icon-up-topic1"
+                                                class="w-5 h-5 text-gray-500 transition-transform duration-300 hidden"
+                                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7">
+                                                </path>
+                                            </svg>
+                                            <span class="ml-6 text-black text-md font-medium">Is there a refund
+                                                policy?</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right w-24 text-center">1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic1"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-red-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Introduction to
+                                                            Refund Policy</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-red-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Refund Process
+                                                            Explained</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-red-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Common Refund
+                                                            Questions</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-6 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic2')">
+
+                                        <div class="flex items-center">
+                                            <!-- Icons -->
+                                            <svg id="icon-down-topic2"
+                                                class="w-5 h-5 text-gray-500 transition-transform duration-300"
+                                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7">
+                                                </path>
+                                            </svg>
+                                            <svg id="icon-up-topic2"
+                                                class="w-5 h-5 text-gray-500 transition-transform duration-300 hidden"
+                                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7">
+                                                </path>
+                                            </svg>
+                                            <span class="ml-6 text-black text-md font-medium">Is there a refund
+                                                policy?</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right w-24 text-center">1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic2"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-red-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Introduction to
+                                                            Refund Policy</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-red-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Refund Process
+                                                            Explained</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-red-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Common Refund
+                                                            Questions</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+                            </ul>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex sm:w-full lg:w-1/3 bgBackGroundClr bg-gradient-to-r from-sky-900 to-sky-600 space-y-5 mb-8 md:mb-0 p-5 shadow-md rounded-xl mr-3 ml-3">
+                    <div class="w-full text-left">
+                        <p class="text-md text-white-800 text-left leading-normal mb-5 font-lf-normal">
+                            I had a fantastic experience working with [Platform/Tool/Service]. The documentation was
+                            clear,
+                            the support was incredibly responsive,
+                            and the functionality exceeded my expectations. It made development seamless and enjoyable
+                        </p>
+                        <span class="flex item-center">
+                            <div>
+                                <p class="text-sm text-white-600">[Name] Sir </p>
+                                <p class="text-sm text-white-400">Profession</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+	
+  <footer class="w-full border-t bg-white pb-5">
+        <div class="w-full container mx-auto flex flex-col items-center">
+            <div class="flex flex-col md:flex-row text-center md:text-left md:justify-between py-6">
+                <a href="#" class="uppercase px-3">About Us</a>
+                <a href="#" class="uppercase px-3">Privacy Policy</a>
+                <a href="#" class="uppercase px-3">Terms & Conditions</a>
+                <a href="#" class="uppercase px-3">Contact Us</a>
+            </div>
+            <div class="uppercase font-bold text-blue-800 pb-6">&copy; 2025 My Learning Page. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+<script>
+    function toggleCollapse(id) {
+    const element = document.getElementById(id);
+    const iconDown = document.getElementById(`icon-down-${id}`);
+    const iconUp = document.getElementById(`icon-up-${id}`);
+
+    if (element.style.maxHeight && element.style.maxHeight !== "0px") {
+        // Collapse the clicked panel
+        element.style.maxHeight = "0px";
+        iconDown.classList.remove("hidden");
+        iconUp.classList.add("hidden");
+    } else {
+        // Expand the clicked panel
+        element.style.maxHeight = element.scrollHeight + "px";
+        iconDown.classList.add("hidden");
+        iconUp.classList.remove("hidden");
+    }
+}
+</script>
+
+</html>

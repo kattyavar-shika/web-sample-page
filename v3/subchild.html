@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Page</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+        .font-family-karla {
+            font-family: karla;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-family-karla">
+    <nav class="w-full py-2 bg-blue-800 shadow">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
+
+            <nav>
+                <ul class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="#"></a></li>
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="#"></a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center text-lg no-underline text-white pr-6">
+                <a class="" href="#">
+
+                </a>
+                <a class="pl-6" href="#">
+
+                </a>
+                <a class="pl-6" href="#">
+                    <i class="fab fa-sign in"></i>
+                </a>
+                <span class="pl-6" href="#">
+                    <a class="hover:text-gray-200 hover:underline px-4" href="#">Login</a>
+                </span>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Topic Nav -->
+    <nav class="w-full py-2 border-t border-b bg-gray-100" ">
+        <div  class=" w-full flex-grow sm:flex sm:items-center sm:w-auto">
+        <div
+            class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+            <a href="#home" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Home</a>
+            <a href="#explore" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Explore More</a>
+            <a href="#mock" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Mock Up</a>
+            <a href="#about" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">About</a>
+            <a href="#contact" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Contact</a>
+
+        </div>
+        </div>
+    </nav>
+
+    <div class="bg-sky-50 text-white  flex flex-col lg:flex-row lg:justify-between">
+        <div class="lg:w-2/3">
+            <iframe class="w-full h-96" frameborder="0" src="https://www.youtube.com/embed/-sbKzeFczbw"
+                title="90s Evergreen Hindi Songs | 90s Hits Hindi Songs | Romantic Hindi Songs |90s Bollywood Songs Jukebox"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        </div>
+        <div class="lg:w-1/3">
+            <div class=" flex flex-col ">
+                <div class="text-base" id="pricing">
+                    <div
+                        class="isolate mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8 lg:max-w-screen-lg">
+                        <div class="p-1 ">
+                            <div class="border-b border-gray-200  flex justify-center space-x-6">
+                                <button class="py-2 px-6 text-blue-900 border-b-2 border-blue-600 tab-btn">
+                                    Syllabs Content
+                                </button>
+
+                            </div>
+
+                            <ul class="shadow-md border border-gray-300 rounded-lg bg-white">
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic3')">
+                                        <div class="flex items-center">
+                                            <span class="ml-6 text-black text-md font-medium">Python - Home</span>
+                                        </div>
+                                        <span class="text-black text-sm font-small text-right  text-center">
+                                            3 lectures 1h 36m 32s</span>
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic3"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Introduction
+                                                            to
+                                                            Python</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Overivew
+                                                            Python</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            History</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic1')">
+
+                                        <div class="flex items-center">
+                                            <span class="ml-6 text-black text-md font-medium">Python - Features</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right  text-center">3 lectures
+                                            1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic1"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                      <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python vs
+                                                            C++</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+													<svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python - Hello
+                                                            World Program</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">CPython -
+                                                            Application Areas</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic2')">
+
+                                        <div class="flex items-center">
+
+                                            <span class="ml-6 text-black text-md font-medium">Python - Application
+                                                Areas</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right text-center"> 3 lectures
+                                            1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic2"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python
+                                                            Interpreter and Its Modes</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Environment Setup</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Virtual Environment
+                                                        </span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic4')">
+
+                                        <div class="flex items-center">
+
+                                            <span class="ml-6 text-black text-md font-medium">Python - Application
+                                                Areas</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right  text-center"> 3 lectures
+                                            1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic4"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python
+                                                            Interpreter and Its Modes</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Environment Setup</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Virtual Environment
+                                                        </span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic5')">
+
+                                        <div class="flex items-center">
+
+                                            <span class="ml-6 text-black text-md font-medium">Python - Application
+                                                Areas</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right  text-center"> 3 lectures
+                                            1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic5"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python
+                                                            Interpreter and Its Modes</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Environment Setup</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Virtual Environment
+                                                        </span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic6')">
+
+                                        <div class="flex items-center">
+
+                                            <span class="ml-6 text-black text-md font-medium">Python - Application
+                                                Areas</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right  text-center"> 3 lectures
+                                            1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic6"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python
+                                                            Interpreter and Its Modes</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Environment Setup</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Virtual Environment
+                                                        </span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic7')">
+
+                                        <div class="flex items-center">
+
+                                            <span class="ml-6 text-black text-md font-medium">Python - Application
+                                                Areas</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right  text-center"> 3 lectures
+                                            1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic7"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python
+                                                            Interpreter and Its Modes</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Environment Setup</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Virtual Environment
+                                                        </span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic8')">
+
+                                        <div class="flex items-center">
+
+                                            <span class="ml-6 text-black text-md font-medium">Python - Application
+                                                Areas</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right  text-center"> 3 lectures
+                                            1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic8"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python
+                                                            Interpreter and Its Modes</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Environment Setup</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Virtual Environment
+                                                        </span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic9')">
+
+                                        <div class="flex items-center">
+
+                                            <span class="ml-6 text-black text-md font-medium">Python - Application
+                                                Areas</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right  text-center"> 3 lectures
+                                            1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic9"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python
+                                                            Interpreter and Its Modes</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Environment Setup</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Virtual Environment
+                                                        </span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+
+                                <li class="relative border-b border-gray-200">
+                                    <button type="button"
+                                        class="w-full px-3 py-3 text-left flex justify-between items-center border-t border-b bg-gray-100"
+                                        onclick="toggleCollapse('topic10')">
+
+                                        <div class="flex items-center">
+
+                                            <span class="ml-6 text-black text-md font-medium">Python - Application
+                                                Areas</span>
+                                        </div>
+
+                                        <span class="text-black text-sm font-small text-right  text-center"> 3 lectures
+                                            1h 36m
+                                            32s</span>
+
+                                    </button>
+
+                                    <!-- Collapsible Content -->
+                                    <div id="topic10"
+                                        class="relative overflow-hidden collapsible-content transition-all duration-700 max-h-0">
+                                        <div class="px-6 pb-6">
+                                            <ul class="space-y-4 pt-3">
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python
+                                                            Interpreter and Its Modes</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">12m 45s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Environment Setup</span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">8m 30s</span>
+                                                </li>
+
+                                                <li class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <!-- Video Icon -->
+                                                        <svg class="w-4 h-4 text-gray-200 mr-3" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M23 7l-7 5 7 5V7z"></path>
+                                                            <path
+                                                                d="M1 5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V5z">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="text-gray-700 text-sm font-semibold">Python -
+                                                            Virtual Environment
+                                                        </span>
+                                                    </div>
+                                                    <span class="text-gray-600 text-sm ml-auto">5m 15s</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-white  flex flex-col lg:flex-row lg:justify-between">
+        <div class="lg:w-3/4 ">
+
+        </div>
+    </div>
+
+    <footer class="w-full border-t bg-white pb-5">
+        <div class="w-full container mx-auto flex flex-col items-center">
+            <div class="flex flex-col md:flex-row text-center md:text-left md:justify-between py-6">
+                <a href="#" class="uppercase px-3">About Us</a>
+                <a href="#" class="uppercase px-3">Privacy Policy</a>
+                <a href="#" class="uppercase px-3">Terms & Conditions</a>
+                <a href="#" class="uppercase px-3">Contact Us</a>
+            </div>
+            <div class="uppercase font-bold text-blue-800 pb-6">&copy; 2025 My Learning Page. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+<script>
+
+    function toggleCollapse(id) {
+        const element = document.getElementById(id);
+        const iconDown = document.getElementById(`icon-down-${id}`);
+        const iconUp = document.getElementById(`icon-up-${id}`);
+
+        if (element.style.maxHeight && element.style.maxHeight !== "0px") {
+            // Collapse the clicked panel
+            element.style.maxHeight = "0px";
+            iconDown.classList.remove("hidden");
+            iconUp.classList.add("hidden");
+        } else {
+            // Expand the clicked panel
+            element.style.maxHeight = element.scrollHeight + "px";
+            iconDown.classList.add("hidden");
+            iconUp.classList.remove("hidden");
+        }
+    }
+</script>
+
+</html>

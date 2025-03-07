@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind  Template</title>
+    <meta name="author" content="David Grzyb">
+    <meta name="description" content="">
+
+    <!-- Tailwind -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+        .font-family-karla {
+            font-family: karla;
+        }
+		::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
+
+    
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" ></script>
+</head>
+<body class="bg-white font-family-karla">
+
+    <!-- Top Bar Nav -->
+    <nav class="w-full py-2 bg-blue-800 shadow">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
+
+            <nav>
+                <ul class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="#"></a></li>
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="#"></a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center text-lg no-underline text-white pr-6">
+                <a class="" href="#">
+                    
+                </a>
+                <a class="pl-6" href="#">
+                    
+                </a>
+                <a class="pl-6" href="#">
+                    <i class="fab fa-sign in"></i>
+                </a>
+                <span class="pl-6" href="#">
+                   <a class="hover:text-gray-200 hover:underline px-4" href="#">Login</a>
+                </span>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Topic Nav -->
+    <nav class="w-full py-2 border-t border-b bg-gray-100" ">
+        <div  class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+                <a href="#home" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Home</a>
+                <a href="#explore" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Explore More</a>
+                <a href="#mock" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Mock Up</a>
+                <a href="#about" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">About</a>
+                <a href="#contact" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Contact</a>
+                
+            </div>
+        </div>
+    </nav>
+       
+	    <!-- Text Header -->
+    <header id="home" class="w-full container mx-auto">
+        <div class="flex flex-col items-center py-6">
+            <a class="font-bold text-blue-800 uppercase hover:text-gray-700 text-5xl" href="#">
+                Welcome to My Learning Page
+            </a>
+            <p class="text-lg text-gray-600">
+                This page is dedicated to my learning journey and experiences.
+            </p>
+        </div>
+    </header>
+
+    <div class="container mx-auto p-6 flex flex-col items-center justify-center min-h-screen">
+
+        <div id="explore" class="content-section fade-in px-6 py-10 text-center scroll-section">
+
+            <h2 class="text-3xl font-bold text-blue-800 uppercase">Explore More</h2>
+            <p class="mt-3 text-gray-600">Expand your knowledge by exploring these exciting topics.</p>
+            <hr class="my-4 border-t-2 border-gray-300">
+
+            <div class="max-w-7xl mx-auto mt-8 p-4">
+                <div class="p-5 rounded-lg ring-2 ring-gray-400">
+                    <!-- Tabs -->
+                    <div class="border-b border-gray-200 mb-4 flex justify-center space-x-6">
+                        <button class="py-2 px-6 text-blue-900 border-b-2 border-blue-600 tab-btn"
+                            onclick="openTab(event, 'Self')">
+                            Self
+                        </button>
+                        <button class="py-2 px-6 text-gray-900 border-b-2 border-transparent 
+			  hover:border-blue-600 tab-btn" onclick="openTab(event, 'live')">
+                            Live
+                        </button>
+                        <button class="py-2 px-6 text-gray-900 border-b-2 border-transparent 
+			  hover:border-blue-600 tab-btn" onclick="openTab(event, 'combined')">
+                            Combined
+                        </button>
+                    </div>
+
+                    <!-- Grid Layout -->
+                    <div id="Self" class="tab-content border-b border-gray-200">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                            <!-- Course Card Template -->
+                            <div
+                                class="max-w-md mx-auto bg-white border border-2 border-solid border-gray-500 rounded-lg shadow-md p-5 transition-transform transform hover:scale-105 hover:shadow-xl fade-in">
+                                <img src="../images/6.jpg" alt="Java Course"
+                                    class="w-full h-40 object-cover rounded-lg">
+                                <h2 class="text-2xl font-bold text-blue-800 hover:text-gray-70 pt-2">JAVA</h2>
+                                <hr class="my-4 border-t-2 border-blue-800">
+                                <div class="mt-3 space-y-2 text-gray-700 text-sm">
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 35</span> &nbsp; contact hours
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 8</span> &nbsp; case studies,
+                                        20 industry-based
+                                        scenarios
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-semibold">
+                                        💰 $799
+                                    </div>
+                                </div>
+                                <div
+                                    class="mt-4 flex justify-between text-sm text-gray-700 bg-white p-3 rounded-lg shadow-sm">
+                                    <span class="font-medium">⏳ 4 weeks</span>
+                                    <span class="font-medium">📅 Starts: <b>28th Jan '25</b></span>
+                                </div>
+                                <a href="child.html" target="_blank" class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                                    Learn More
+                                </a>
+                            </div>
+
+                            <div
+                                class="max-w-md mx-auto bg-white border border-2 border-solid border-gray-500 rounded-lg shadow-md p-5 transition-transform transform hover:scale-105 hover:shadow-xl fade-in">
+                                <img src="../images/docker.png" alt="Java Course"
+                                    class="w-full h-40 object-cover rounded-lg">
+                                <h2 class="text-2xl font-bold text-blue-800 hover:text-gray-70 pt-2">DOCKER</h2>
+                                <hr class="my-4 border-t-2 border-blue-800">
+                                <div class="mt-3 space-y-2 text-gray-700 text-sm">
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 35</span> &nbsp; contact hours
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 8</span> &nbsp; case studies, 20
+                                        industry-based
+                                        scenarios
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-semibold">
+                                        💰 $799
+                                    </div>
+                                </div>
+                                <div
+                                    class="mt-4 flex justify-between text-sm text-gray-700 bg-white p-3 rounded-lg shadow-sm">
+                                    <span class="font-medium">⏳ 4 weeks</span>
+                                    <span class="font-medium">📅 Starts: <b>28th Jan '25</b></span>
+                                </div>
+                                <a href="child.html" target="_blank" class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                                    Learn More
+                                </a>
+                            </div>
+
+                            <div
+                                class="max-w-md mx-auto bg-white border border-2 border-solid border-gray-500 rounded-lg shadow-md p-5 transition-transform transform hover:scale-105 hover:shadow-xl fade-in">
+                                <img src="../images/data-science.jpg" alt="Java Course"
+                                    class="w-full h-40 object-cover rounded-lg">
+                                <h2 class="text-2xl font-bold text-blue-800 hover:text-gray-70 pt-2">DATA SCIENCE </h2>
+                                <hr class="my-4 border-t-2 border-blue-800">
+                                <div class="mt-3 space-y-2 text-gray-700 text-sm">
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 35</span> &nbsp; contact hours
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 8</span> &nbsp; case studies, 20
+                                        industry-based
+                                        scenarios
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-semibold">
+                                        💰 $799
+                                    </div>
+                                </div>
+                                <div
+                                    class="mt-4 flex justify-between text-sm text-gray-700 bg-white p-3 rounded-lg shadow-sm">
+                                    <span class="font-medium">⏳ 4 weeks</span>
+                                    <span class="font-medium">📅 Starts: <b>28th Jan '25</b></span>
+                                </div>
+                                <a href="child.html" target="_blank" class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                                    Learn More
+                                </a>
+                            </div>
+
+                            <div
+                                class="max-w-md mx-auto bg-white border border-2 border-solid border-gray-500 rounded-lg shadow-md p-5 transition-transform transform hover:scale-105 hover:shadow-xl fade-in">
+                                <img src="../images/SQL.jpg" alt="Java Course"
+                                    class="w-full h-40 object-cover rounded-lg">
+                                <h2 class="text-2xl font-bold text-blue-800 hover:text-gray-70 pt-2">DATA BASE</h2>
+                                <hr class="my-4 border-t-2 border-blue-800">
+                                <div class="mt-3 space-y-2 text-gray-700 text-sm">
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 35</span> &nbsp; contact hours
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 8</span> &nbsp; case studies, 20
+                                        industry-based
+                                        scenarios
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-semibold">
+                                        💰 $799
+                                    </div>
+                                </div>
+                                <div
+                                    class="mt-4 flex justify-between text-sm text-gray-700 bg-white p-3 rounded-lg shadow-sm">
+                                    <span class="font-medium">⏳ 4 weeks</span>
+                                    <span class="font-medium">📅 Starts: <b>28th Jan '25</b></span>
+                                </div>
+                                <a href="/data-science-course" target="_blank"
+                                    class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                                    Learn More
+                                </a>
+                            </div>
+
+                            <div
+                                class="max-w-md mx-auto bg-white border border-2 border-solid border-gray-500 rounded-lg shadow-md p-5 transition-transform transform hover:scale-105 hover:shadow-xl fade-in">
+                                <img src="../images/spring.jpg" alt="Java Course"
+                                    class="w-full h-40 object-cover rounded-lg">
+                                <h2 class="text-2xl font-bold text-blue-800 hover:text-gray-70 pt-2">SPRING BOOT</h2>
+                                <hr class="my-4 border-t-2 border-blue-800">
+                                <div class="mt-3 space-y-2 text-gray-700 text-sm">
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 35</span> &nbsp; contact hours
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 8</span> &nbsp; case studies, 20
+                                        industry-based
+                                        scenarios
+                                    </div>
+                                    <div class="flex items-center text-blue-700 font-semibold">
+                                        💰 $799
+                                    </div>
+                                </div>
+                                <div
+                                    class="mt-4 flex justify-between text-sm text-gray-700 bg-white p-3 rounded-lg shadow-sm">
+                                    <span class="font-medium">⏳ 4 weeks</span>
+                                    <span class="font-medium">📅 Starts: <b>28th Jan '25</b></span>
+                                </div>
+                                <a href="child.html" target="_blank" class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                                    Learn More
+                                </a>
+                            </div>
+
+                            <div
+                                class="max-w-md mx-auto bg-white border border-2 border-solid border-gray-500 rounded-lg shadow-md p-5 transition-transform transform hover:scale-105 hover:shadow-xl fade-in">
+                                <img src="../images/C-lang.png" alt="Java Course"
+                                    class="w-full h-40 object-cover rounded-lg">
+                                <h2 class="text-2xl font-bold text-blue-800 hover:text-gray-70 pt-2">C LANGUAGE</h2>
+                                <hr class="my-4 border-t-2 border-blue-800">
+                                <div class="mt-3 space-y-2 text-gray-700 text-sm">
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 35</span> &nbsp; contact hours
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-blue-600 font-semibold">📌 8</span> &nbsp; case studies, 20
+                                        industry-based
+                                        scenarios
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-semibold">
+                                        💰 $799
+                                    </div>
+                                </div>
+                                <div
+                                    class="mt-4 flex justify-between text-sm text-gray-700 bg-white p-3 rounded-lg shadow-sm">
+                                    <span class="font-medium">⏳ 4 weeks</span>
+                                    <span class="font-medium">📅 Starts: <b>28th Jan '25</b></span>
+                                </div>
+                                <a href="child.html" target="_blank"
+                                    class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                                    Learn More
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!-- Duplicate the above div for other courses, changing only the content -->
+                    </div>
+                
+
+                <div id="live" class="tab-content border-b border-gray-200">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                        <!-- Course Card Template -->
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg shadow-md p-5 transition-transform transform hover:scale-105 hover:shadow-xl">
+                            <img src="../images/6.jpg" alt="Java Course" class="w-full h-40 object-cover rounded-lg">
+                            <h2 class="text-2xl font-bold text-blue-800 hover:text-gray-70 pt-2">JAVA</h2>
+                            <hr class="my-3 border-t-2 border-blue-800">
+                            <div class="text-gray-700 text-sm space-y-2">
+                                <div class="flex items-center"><span class="text-blue-900 font-semibold">📌 35</span>
+                                    &nbsp; contact hours</div>
+                                <div class="flex items-center"><span class="text-blue-900 font-semibold">📌 8</span>
+                                    &nbsp; case studies, 20 industry-based scenarios</div>
+                                <div class="flex items-center text-blue-600 font-semibold">💰 $799</div>
+                            </div>
+                            <div
+                                class="mt-4 flex justify-between text-sm text-gray-700 bg-gray-100 p-3 rounded-lg shadow-sm">
+                                <span class="font-medium">⏳ 4 weeks</span>
+                                <span class="font-medium">📅 Starts: <b>28th Jan '25</b></span>
+                            </div>
+                            <a href="child.html" target="_blank"
+                                class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                                Learn More
+                            </a>
+                        </div>
+
+                        <div
+                            class="max-w-md mx-auto bg-white border border-2 border-solid border-gray-500 rounded-lg shadow-md p-5 transition-transform transform hover:scale-105 hover:shadow-xl fade-in">
+                            <img src="../images/C-lang.png" alt="Java Course"
+                                class="w-full h-40 object-cover rounded-lg">
+                            <h2 class="text-2xl font-bold text-blue-800 hover:text-gray-70 pt-2">C LANGUAGE</h2>
+                            <hr class="my-4 border-t-2 border-blue-800">
+                            <div class="mt-3 space-y-2 text-gray-700 text-sm">
+                                <div class="flex items-center">
+                                    <span class="text-blue-600 font-semibold">📌 35</span> &nbsp; contact hours
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-blue-600 font-semibold">📌 8</span> &nbsp; case studies, 20
+                                    industry-based
+                                    scenarios
+                                </div>
+                                <div class="flex items-center text-blue-600 font-semibold">
+                                    💰 $799
+                                </div>
+                            </div>
+                            <div
+                                class="mt-4 flex justify-between text-sm text-gray-700 bg-white p-3 rounded-lg shadow-sm">
+                                <span class="font-medium">⏳ 4 weeks</span>
+                                <span class="font-medium">📅 Starts: <b>28th Jan '25</b></span>
+                            </div>
+                            <a href="child.html" target="_blank"
+                                class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                                Learn More
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Duplicate the above div for other courses, changing only the content -->
+                </div>
+
+
+                <div id="combined" class="tab-content border-b border-gray-200">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                        <!-- Course Card Template -->
+                        <div
+                            class="bg-white border border-gray-300 rounded-lg shadow-md p-5 transition-transform transform hover:scale-105 hover:shadow-xl">
+                            <img src="../images/6.jpg" alt="Java Course" class="w-full h-40 object-cover rounded-lg">
+                            <h2 class="text-2xl font-bold text-blue-800 hover:text-gray-70 pt-2">JAVA</h2>
+                            <hr class="my-3 border-t-2 border-blue-800">
+                            <div class="text-gray-700 text-sm space-y-2">
+                                <div class="flex items-center"><span class="text-blue-900 font-semibold">📌 35</span>
+                                    &nbsp;
+                                    contact hours</div>
+                                <div class="flex items-center"><span class="text-blue-900 font-semibold">📌 8</span>
+                                    &nbsp;
+                                    case studies, 20 industry-based scenarios</div>
+                                <div class="flex items-center text-blue-600 font-semibold">💰 $799</div>
+                            </div>
+                            <div
+                                class="mt-4 flex justify-between text-sm text-gray-700 bg-gray-100 p-3 rounded-lg shadow-sm">
+                                <span class="font-medium">⏳ 4 weeks</span>
+                                <span class="font-medium">📅 Starts: <b>28th Jan '25</b></span>
+                            </div>
+                            <a href="child.html" target="_blank"
+                                class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700
+								flex items-center justify-center px-2 py-3 mt-6">
+                                Learn More
+                            </a>
+                        </div>
+                        <!-- Duplicate the above div for other courses, changing only the content -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="about" class="content-section fade-in text-center mt-12 scroll-section">
+        <div class="flex items-center my-4">
+            <hr class="flex-grow border-t-2 border-gray-300">
+            <span class="text-3xl font-bold text-blue-800 uppercase">About</span>
+            <hr class="flex-grow border-t-2 border-gray-300">
+        </div>
+        <p class="mt-4 text-gray-800">
+            This page is created to showcase the learning journey of an aspiring developer. It features a collection
+            of
+            topics such as programming languages, frameworks, and other technologies. The purpose is to help others
+            learn
+            and share insights into the world of technology and development.
+        </p>
+    </div>
+
+    <div id="contact" class="content-section fade-in text-center mt-12 scroll-section">
+        <div class="flex items-center my-4">
+            <hr class="flex-grow border-t-2 border-gray-300">
+            <span class="text-3xl font-bold text-blue-800 uppercase">Contact</span>
+            <hr class="flex-grow border-t-2 border-gray-300">
+        </div>
+        <p class="mt-4 text-gray-800">Feel free to reach out with any questions or feedback.</p>
+    </div>
+
+    </div>
+<footer class="w-full border-t bg-white pb-5">
+        <div class="w-full container mx-auto flex flex-col items-center">
+            <div class="flex flex-col md:flex-row text-center md:text-left md:justify-between py-6">
+                <a href="#" class="uppercase px-3">About Us</a>
+                <a href="#" class="uppercase px-3">Privacy Policy</a>
+                <a href="#" class="uppercase px-3">Terms & Conditions</a>
+                <a href="#" class="uppercase px-3">Contact Us</a>
+            </div>
+            <div class="uppercase font-bold text-blue-800 pb-6">&copy; 2025 My Learning Page. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+         function openTab(event, tabName) {
+        let tabContent = document.getElementsByClassName("tab-content");
+        let tabLinks = document.getElementsByClassName("tab-btn");
+
+        // Hide all tab content
+        for (let i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+        }
+
+        // Remove active class from all buttons
+        for (let i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].classList.remove("border-b-2", "border-white-600", "text-blue-300");
+        }
+
+        // Show the clicked tab
+        document.getElementById(tabName).style.display = "block";
+
+        // Add active class to the clicked button
+        event.currentTarget.classList.add("border-b-2", "border-white-600", "text-blue-300");
+    }
+
+    // Set the default tab (first tab open on load)
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".tab-btn").click();
+    });
+    </script>
+
+</body>
+</html>
